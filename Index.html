@@ -1,0 +1,111 @@
+html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wires Plumbing Co. - Expert Local Plumbing & 24/7 Emergency Service</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            200: '#bae0fd',
+                            500: '#0284c7',
+                            600: '#0265d2',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            dark: '#071325',
+                            accent: '#ff5e14',
+                            accentHover: '#ea4e05'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0284c7;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0369a1;
+        }
+        .pulse-ring {
+            box-shadow: 0 0 0 0 rgba(255, 94, 20, 0.7);
+            animation: pulse-ring 1.8s infinite cubic-bezier(0.66, 0, 0, 1);
+        }
+        @keyframes pulse-ring {
+            to {
+                box-shadow: 0 0 0 12px rgba(255, 94, 20, 0);
+            }
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-900 selection:bg-brand-500 selection:text-white antialiased">
+
+    <div id="emergency-bar" class="bg-gradient-to-r from-brand-accent via-orange-600 to-red-600 text-white text-xs sm:text-sm py-2 px-4 font-bold relative z-50 shadow-md">
+        <div class="container mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="relative flex h-3 w-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                </span>
+                <span>🚨 <strong>24/7 Rapid Emergency Dispatch:</strong> Plumbers Available Now in Troy, Tipp City & Miami County</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:9375550199" class="bg-white text-brand-accent hover:bg-slate-100 px-3 py-1 rounded-md transition-all font-extrabold flex items-center gap-1 shadow">
+                    <i class="fa-solid fa-phone"></i> (937) 555-0199
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-brand-700 to-brand-500 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-brand-600/30 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-faucet-drip text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-black text-white tracking-wider block leading-none">THE WIRES</span>
+                        <span class="text-[11px] font-extrabold text-brand-500 tracking-widest uppercase block mt-1">Plumbing Co.</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-7 font-semibold text-slate-300 text-sm">
+                    <a href="#troubleshooter" class="hover:text-brand-500 transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-stethoscope text-brand-500"></i> Diagnostic Tool
+     
